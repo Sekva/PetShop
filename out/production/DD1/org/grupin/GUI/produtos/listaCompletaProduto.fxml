@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.grupin.GUI.produtos.ListProdutoController">
+   <children>
+      <TableView fx:id="tabelaProduto" layoutX="14.0" layoutY="50.0" prefHeight="372.0" prefWidth="372.0">
+        <columns>
+          <TableColumn fx:id="nomeProdutoCol" prefWidth="130.0" text="Nome" />
+          <TableColumn fx:id="referenciaProdutoCol" prefWidth="109.0" text="Referencia" />
+          <TableColumn fx:id="qtdProdutoCol" prefWidth="65.0" text="Qtd." />
+            <TableColumn fx:id="valor" prefWidth="66.0" text="R$" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelFiltro" layoutX="37.0" layoutY="14.0" prefHeight="28.0" prefWidth="74.0" text="Filtro:" />
+      <TextField fx:id="filtroTxt" layoutX="93.0" layoutY="15.0" prefHeight="28.0" prefWidth="237.0" />
+   </children>
+</AnchorPane>
