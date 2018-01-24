@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import org.grupin.entidades.Produto;
 import org.grupin.exceptions.ArquivoNaoEscitoException;
 import org.grupin.exceptions.ProdutoNaoEncontradoException;
 import org.grupin.main.Main;
@@ -37,7 +36,7 @@ public class RemoverProdutoController {
 
 
         if(referencia.equals("") || verificarLetras(txtQuantidadeProduto.getText())) {
-            System.out.println("String vazia");
+            //IGNORE System.out.println("String vazia");
             Main.novaJanela("problemaQuantidadeInvalida.fxml", "");
 
         } else {
@@ -49,9 +48,9 @@ public class RemoverProdutoController {
             while (qtd > 0) {
                 try {
                     this.fachada.removerProduto(referencia);
-                } catch (ProdutoNaoEncontradoException e) {
+                } catch (ProdutoNaoEncontradoException excep) {
                     Main.novaJanela("problemaQuantidadeInvalida.fxml", "");
-                } catch (ArquivoNaoEscitoException e) {
+                } catch (ArquivoNaoEscitoException excep) {
                     Main.novaJanela("problemaBaseDeDados.fxml", "");
                 }
 

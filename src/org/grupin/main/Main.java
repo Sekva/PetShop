@@ -14,25 +14,31 @@ public class Main extends Application {
 
         try {
 
-            FXMLLoader cargador = new FXMLLoader(Main.class.getResource("../GUI/gerenteGUI.fxml"));
+            FXMLLoader cargador = new FXMLLoader(Main.class.getResource("/org/grupin/GUI/login.fxml"));
             Pane pane = cargador.load();
             Scene cena = new Scene(pane);
             primaryStage.setScene(cena);
             primaryStage.setResizable(false);
             primaryStage.show();
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (Exception excep) {
+            excep.printStackTrace();
         }
     }
 
-    public static void main(String[] args) {launch(args);}
+    public static void main(String[] args) {
+
+
+        launch(args);
+
+
+    }
 
     public static void novaJanela(String janela, String titulo) {
 
         try {
             Stage novo = new Stage();
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../GUI/" + janela));
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("/org/grupin/GUI/" + janela));
             Pane pane = loader.load();
             Scene cena = new Scene(pane);
             novo.setScene(cena);
@@ -40,11 +46,14 @@ public class Main extends Application {
             novo.setTitle(titulo);
             novo.show();
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (Exception excep) {
+            excep.printStackTrace();
         }
 
 
     }
+
+
+
 
 }

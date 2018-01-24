@@ -17,20 +17,24 @@
       <w>controlador</w>
       <w>controles</w>
       <w>dados</w>
+      <w>excep</w>
       <w>fachada</w>
       <w>fechar</w>
       <w>filtrados</w>
       <w>filtro</w>
       <w>gerente</w>
       <w>grupin</w>
+      <w>incorreto</w>
       <w>invalidos</w>
       <w>letras</w>
       <w>lista</w>
+      <w>logar</w>
       <w>loja</w>
       <w>maiuscula</w>
       <w>metodos</w>
       <w>mudada</w>
       <w>opcional</w>
+      <w>orra</w>
       <w>palco</w>
       <w>peto</w>
       <w>pode</w>
@@ -52,10 +56,13 @@
       <w>tabela</w>
       <w>tela</w>
       <w>tema</w>
+      <w>titulo</w>
       <w>toda</w>
       <w>tver</w>
       <w>valores</w>
       <w>vazia</w>
+      <w>vendedor</w>
+      <w>vendendor</w>
       <w>verificar</w>
     </words>
   </dictionary>

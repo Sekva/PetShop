@@ -1,8 +1,5 @@
 package org.grupin.GUI.agendamentos;
 
-import java.util.ArrayList;
-import java.util.Date;
-
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -15,6 +12,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.grupin.entidades.Agendamento;
 import org.grupin.servicos.hallDeEntrada;
+
+import java.util.ArrayList;
 
 public class ListAgendamentosController {
     @FXML
@@ -51,9 +50,9 @@ public class ListAgendamentosController {
                 masterData.add(p);
             }
 
-        } catch (Exception e) {
-            System.out.println("Eita");
-            e.printStackTrace();
+        } catch (Exception excep) {
+            //IGNORE System.out.println("Eita");
+            excep.printStackTrace();
         }
         // Initially add all data to filtered data
         filteredData.addAll(masterData);

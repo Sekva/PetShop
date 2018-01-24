@@ -1,13 +1,10 @@
 package org.grupin.GUI.produtos;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.grupin.entidades.Produto;
 import org.grupin.exceptions.ArquivoNaoEscitoException;
-import org.grupin.exceptions.ProdutoNaoEncontradoException;
-import org.grupin.exceptions.ReferenciaInvalidaException;
 import org.grupin.main.Main;
 import org.grupin.servicos.hallDeEntrada;
 
@@ -63,14 +60,14 @@ public class NovoProdutoController {
 
         if(this.fachada.validarProduto(nomeProduto, refProduto,valorVenda, valorCompra, quantidade)) {
 
-            System.out.println("ok");
+            //IGNORE System.out.println("ok");
 
             Produto p = this.fachada.criarProduto(nomeProduto, refProduto, valorCompra, valorVenda, "algo", quantidade);
 
                 try {
 
                     if(this.fachada.pegarProduto(refProduto) != null) {
-                        System.out.println("Referencia invalida");
+                        //IGNORE System.out.println("Referencia invalida");
                         Main.novaJanela("problemaReferenciaInvalida.fxml", "");
                     } else {
 
@@ -81,17 +78,17 @@ public class NovoProdutoController {
                         palco.close();
                     }
 
-                } catch (ArquivoNaoEscitoException e) {
+                } catch (ArquivoNaoEscitoException excep) {
                     Main.novaJanela("problemaBaseDeDados.fxml", "");
-                    System.out.println("Arquivo não pode ser escrito");
-                    e.printStackTrace();
+                    //IGNORE System.out.println("Arquivo não pode ser escrito");
+                    excep.printStackTrace();
                 }
 
 
 
 
         } else {
-            System.out.println("n ok");
+            //IGNORE System.out.println("n ok");
         }
 
 

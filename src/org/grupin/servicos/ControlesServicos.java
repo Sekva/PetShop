@@ -1,12 +1,10 @@
 package org.grupin.servicos;
 
-import org.grupin.entidades.Produto;
 import org.grupin.entidades.Servico;
 import org.grupin.exceptions.ArquivoNaoEscitoException;
 import org.grupin.exceptions.ProdutoNaoEncontradoException;
 import org.grupin.exceptions.ReferenciaInvalidaException;
 import org.grupin.repo.RepoServicos;
-import org.grupin.repo.contratos.IRepoServicos;
 
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
@@ -15,7 +13,7 @@ import java.util.ArrayList;
 public class ControlesServicos {
 
 
-    private final IRepoServicos repo;
+    private final RepoServicos repo;
     private ArrayList<Servico> todosProdutos;
 
     public ControlesServicos() {
@@ -34,8 +32,8 @@ public class ControlesServicos {
                 this.repo.adicionar(servico);
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (Exception excep) {
+            excep.printStackTrace();
             throw new ArquivoNaoEscitoException();
         }
 
@@ -59,13 +57,13 @@ public class ControlesServicos {
             return p;
 
 
-        } catch (ProdutoNaoEncontradoException e) {
+        } catch (ProdutoNaoEncontradoException excep) {
             throw new ProdutoNaoEncontradoException(referencia);
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException excep) {
             throw new ArquivoNaoEscitoException();
-        } catch (UnsupportedEncodingException e) {
+        } catch (UnsupportedEncodingException excep) {
             throw new ArquivoNaoEscitoException();
-        }  catch (Exception e) {
+        }  catch (Exception excep) {
             throw new ArquivoNaoEscitoException();
         }
 
@@ -78,7 +76,7 @@ public class ControlesServicos {
             this.todosProdutos = this.repo.listar();
             return this.todosProdutos;
 
-        } catch (Exception e) {
+        } catch (Exception excep) {
             throw  new ArquivoNaoEscitoException();
         }
 
@@ -93,9 +91,9 @@ public class ControlesServicos {
 
             p = this.repo.acharServico(referencia);
 
-        } catch (Exception e) {
-            System.out.println("aqui");
-            e.printStackTrace();
+        } catch (Exception excep) {
+            //IGNORE System.out.println("aqui");
+            excep.printStackTrace();
 
             throw new ArquivoNaoEscitoException();
         }

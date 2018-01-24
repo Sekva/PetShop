@@ -27,7 +27,7 @@ public class RemoverServicoController {
             Stage palco = (Stage) this.txtReferenciaServico.getScene().getWindow();
             palco.close();
 
-        } catch (Exception e) {
+        } catch (Exception excep) {
             Main.novaJanela("problemaReferenciaInvalida.fxml", "");
         }
 

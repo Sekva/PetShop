@@ -5,15 +5,12 @@ import org.grupin.exceptions.AgendamentoInvalidoPorId;
 import org.grupin.exceptions.AgendamentoNaoEncontradoException;
 import org.grupin.exceptions.ArquivoNaoEscitoException;
 import org.grupin.repo.RepoAgendamentos;
-import org.grupin.repo.contratos.IRepoAgendamentos;
 
-import java.io.FileNotFoundException;
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 public class ControleAgendamentos {
 
-    private final IRepoAgendamentos repo;
+    private final RepoAgendamentos repo;
 
 
     public ControleAgendamentos() {
@@ -28,7 +25,7 @@ public class ControleAgendamentos {
         } else {
             try {
                 this.repo.adicionar(agendamento);
-            } catch (Exception e) {
+            } catch (Exception excep) {
                 throw new ArquivoNaoEscitoException();
             }
 
@@ -47,7 +44,7 @@ public class ControleAgendamentos {
             this.repo.mudarTag(novaTag, idAgendamento);
             a = this.repo.buscarAgendamento(idAgendamento);
 
-        }  catch (Exception e) {
+        }  catch (Exception excep) {
 
             throw new ArquivoNaoEscitoException();
 
@@ -63,7 +60,7 @@ public class ControleAgendamentos {
         try {
             Agendamento a = this.repo.buscarAgendamento(idAgendamento);
             return a;
-        } catch (Exception e) {
+        } catch (Exception excep) {
             throw new ArquivoNaoEscitoException();
         }
 
@@ -75,7 +72,7 @@ public class ControleAgendamentos {
     public ArrayList<Agendamento> listarAgendamentos() {
         try {
             return this.repo.listar();
-        } catch (Exception e) {
+        } catch (Exception excep) {
             return null;
         }
     }

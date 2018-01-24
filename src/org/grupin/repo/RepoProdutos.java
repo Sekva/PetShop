@@ -30,20 +30,20 @@ public class RepoProdutos implements IRepoProdutos{
         this.listagem = this.listar();
         this.limparArquivo();
 
-        System.out.println(p.getReferenciaProduto());
+        //IGNORE System.out.println(p.getReferenciaProduto());
         String a2 = p.getReferenciaProduto();
-        System.out.println(this.listagem);
+        //IGNORE System.out.println(this.listagem);
         for(int i = 0; i < this.listagem.size(); i++) {
 
             String a1 = this.listagem.get(i).getReferenciaProduto();
 
             if(a1.equals(a2)) {
-                System.out.println("asfasf");
+                //IGNORE System.out.println("asfasf");
                 this.listagem.remove(this.listagem.get(i));
                 break;
             }
         }
-        System.out.println(this.listagem);
+        //IGNORE System.out.println(this.listagem);
         this.reescrever();
         return p;
 
@@ -61,7 +61,7 @@ public class RepoProdutos implements IRepoProdutos{
         try {
             br = new BufferedReader(new FileReader("./jsons/produtos.json"));
             br.close();
-        }catch (Exception e) {
+        }catch (Exception excep) {
             this.limparArquivo();
         }
 

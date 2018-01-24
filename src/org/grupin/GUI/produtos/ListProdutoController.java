@@ -1,7 +1,5 @@
 package org.grupin.GUI.produtos;
 
-import java.util.ArrayList;
-
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -14,6 +12,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.grupin.entidades.Produto;
 import org.grupin.servicos.hallDeEntrada;
+
+import java.util.ArrayList;
 
 public class ListProdutoController {
 
@@ -49,9 +49,9 @@ public class ListProdutoController {
                 masterData.add(p);
             }
 
-        } catch (Exception e) {
-        System.out.println("Eita");
-            e.printStackTrace();
+        } catch (Exception excep) {
+        //IGNORE System.out.println("Eita");
+            excep.printStackTrace();
         }
         // Initially add all data to filtered data
         filteredData.addAll(masterData);

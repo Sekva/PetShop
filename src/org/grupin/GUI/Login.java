@@ -1,14 +1,10 @@
 package org.grupin.GUI;
 
-import com.sun.prism.impl.BaseMesh;
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import org.grupin.entidades.Produto;
 
 public class Login extends Application {
 
@@ -30,8 +26,8 @@ public class Login extends Application {
             primaryStage.setResizable(false);
             primaryStage.show();
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (Exception excep) {
+            excep.printStackTrace();
         }
 
     }
@@ -48,8 +44,8 @@ public class Login extends Application {
             novo.setResizable(false);
             novo.show();
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (Exception excep) {
+            excep.printStackTrace();
         }
 
 

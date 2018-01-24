@@ -3,9 +3,7 @@ package org.grupin.servicos;
 import org.grupin.entidades.Produto;
 import org.grupin.exceptions.ArquivoNaoEscitoException;
 import org.grupin.exceptions.ProdutoNaoEncontradoException;
-import org.grupin.exceptions.ReferenciaInvalidaException;
 import org.grupin.repo.RepoProdutos;
-import org.grupin.repo.contratos.IRepoProdutos;
 
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
@@ -13,7 +11,7 @@ import java.util.ArrayList;
 
 public class ControleProdutos {
 
-    private final IRepoProdutos repo;
+    private final RepoProdutos repo;
     private ArrayList<Produto> todosProdutos;
 
     public ControleProdutos() {
@@ -27,8 +25,8 @@ public class ControleProdutos {
         try {
             this.repo.adicionar(produto);
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (Exception excep) {
+            excep.printStackTrace();
             throw new ArquivoNaoEscitoException();
         }
 
@@ -61,13 +59,13 @@ public class ControleProdutos {
             return p;
 
 
-        } catch (ProdutoNaoEncontradoException e) {
+        } catch (ProdutoNaoEncontradoException excep) {
             throw new ProdutoNaoEncontradoException(referencia);
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException excep) {
             throw new ArquivoNaoEscitoException();
-        } catch (UnsupportedEncodingException e) {
+        } catch (UnsupportedEncodingException excep) {
             throw new ArquivoNaoEscitoException();
-        } catch (Exception e) {
+        } catch (Exception excep) {
             throw new ArquivoNaoEscitoException();
         }
 
@@ -80,7 +78,7 @@ public class ControleProdutos {
             this.todosProdutos = this.repo.listar();
             return this.todosProdutos;
 
-        } catch (Exception e) {
+        } catch (Exception excep) {
             throw  new ArquivoNaoEscitoException();
         }
 
@@ -94,7 +92,7 @@ public class ControleProdutos {
 
             p = this.repo.acharProduto(referencia);
 
-        } catch (Exception e) {
+        } catch (Exception excep) {
 
             throw new ArquivoNaoEscitoException();
         }

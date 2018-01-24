@@ -29,7 +29,7 @@ public class MudarTagAgendamento {
 
         try {
             nId = Integer.parseInt(id);
-        } catch (Exception e) {
+        } catch (Exception excep) {
             Main.novaJanela("problemaReferenciaInvalida.fxml", "");
         }
 
@@ -40,8 +40,8 @@ public class MudarTagAgendamento {
 
             Stage palco = (Stage) this.txtId.getScene().getWindow();
             palco.close();
-        } catch (Exception e) {
-            System.out.println("Eita");
+        } catch (Exception excep) {
+            //IGNORE System.out.println("Eita");
         }
 
 

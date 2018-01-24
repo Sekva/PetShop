@@ -70,7 +70,7 @@ public class NovoServicoController {
 
             Stage palco = (Stage) this.txtCategoria.getScene().getWindow();
             palco.close();
-        } catch (Exception e) {
+        } catch (Exception excep) {
             Main.novaJanela("problemaBaseDeDados.fxml", "");
         }
 

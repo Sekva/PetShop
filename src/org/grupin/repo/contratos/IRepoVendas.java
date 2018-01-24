@@ -2,7 +2,6 @@ package org.grupin.repo.contratos;
 
 import org.grupin.entidades.Venda;
 
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public interface IRepoVendas {

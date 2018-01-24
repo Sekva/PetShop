@@ -1,6 +1,7 @@
 package org.grupin.repo.contratos;
 
 import org.grupin.entidades.Servico;
+
 import java.util.ArrayList;
 
 public interface IRepoServicos {

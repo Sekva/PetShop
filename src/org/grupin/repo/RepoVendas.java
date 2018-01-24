@@ -36,7 +36,7 @@ public class RepoVendas implements IRepoVendas{
         try {
             br = new BufferedReader(new FileReader("./jsons/vendas.json"));
             br.close();
-        }catch (Exception e) {
+        }catch (Exception excep) {
             this.limparArquivo();
         }
 

@@ -1,10 +1,7 @@
 package org.grupin.repo.contratos;
 
 import org.grupin.entidades.Agendamento;
-import org.grupin.exceptions.AgendamentoNaoEncontradoException;
 
-import java.io.FileNotFoundException;
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 public interface IRepoAgendamentos {

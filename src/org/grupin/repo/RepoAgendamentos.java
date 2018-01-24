@@ -61,7 +61,7 @@ public class RepoAgendamentos implements IRepoAgendamentos {
         try {
             br = new BufferedReader(new FileReader("./jsons/agendamentos.json"));
             br.close();
-        }catch (Exception e) {
+        }catch (Exception excep) {
             this.limparArquivo();
         }
 

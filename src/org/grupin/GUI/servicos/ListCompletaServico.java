@@ -50,9 +50,9 @@ public class ListCompletaServico {
                 masterData.add(p);
             }
 
-        } catch (Exception e) {
-            System.out.println("Eita");
-            e.printStackTrace();
+        } catch (Exception excep) {
+            //IGNORE System.out.println("Eita");
+            excep.printStackTrace();
         }
         // Initially add all data to filtered data
         filteredData.addAll(masterData);

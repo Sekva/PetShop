@@ -2,7 +2,6 @@ package org.grupin.repo;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import org.grupin.entidades.Produto;
 import org.grupin.entidades.Servico;
 import org.grupin.repo.contratos.IRepoServicos;
 
@@ -32,9 +31,9 @@ public class RepoServicos implements IRepoServicos {
         this.listagem = this.listar();
         this.limparArquivo();
 
-        //System.out.println(p.getReferenciaProduto());
+        ////IGNORE System.out.println(p.getReferenciaProduto());
         String a2 = p.getReferenciaProduto();
-        //System.out.println(this.listagem);
+        ////IGNORE System.out.println(this.listagem);
         for(int i = 0; i < this.listagem.size(); i++) {
 
             String a1 = this.listagem.get(i).getReferenciaProduto();
@@ -44,7 +43,7 @@ public class RepoServicos implements IRepoServicos {
                 break;
             }
         }
-        //System.out.println(this.listagem);
+        ////IGNORE System.out.println(this.listagem);
         this.reescrever();
         return p;
 
@@ -61,7 +60,7 @@ public class RepoServicos implements IRepoServicos {
         try {
             br = new BufferedReader(new FileReader("./jsons/servicos.json"));
             br.close();
-        }catch (Exception e) {
+        }catch (Exception excep) {
             this.limparArquivo();
         }
 

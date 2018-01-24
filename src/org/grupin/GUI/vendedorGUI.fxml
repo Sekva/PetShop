@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox prefHeight="371.0" prefWidth="640.0" stylesheets="@tema.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.grupin.GUI.GerenteGUIController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Programa">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#sair" text="Sair" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Metodos">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#listagemProdutos" text="Todos Produtos" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#novaVenda" text="Nova Venda" />
+            <MenuItem mnemonicParsing="false" onAction="#listagemVendas" text="Listar Vendas" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+                  <Menu mnemonicParsing="false" text="Serviços">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#listagemAgendamentos" text="Ver Agendamento" />
+                        <MenuItem mnemonicParsing="false" onAction="#novaAgendamento" text="Novo Agendamento" />
+                        <MenuItem mnemonicParsing="false" onAction="#mudarTagAgendamento" text="Mudar Status" />
+                        <MenuItem mnemonicParsing="false" onAction="#listagemAgendamentos" text="Agenda" />
+                    </items>
+                  </Menu>
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Ajuda">
+          <items>
+                  <MenuItem mnemonicParsing="false" text="Ajuda" />
+            <MenuItem mnemonicParsing="false" text="Sobre..." />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+      <TabPane prefHeight="383.0" prefWidth="640.0" styleClass="background" stylesheets="@tema.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Loja">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="listarProdutosBT" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#listagemProdutos" prefHeight="130.0" prefWidth="600.0" styleClass="botao" stylesheets="@tema.css" text="Listar todos os Produtos" />
+                        <Button fx:id="realizarVendaBT" layoutX="14.0" layoutY="155.0" mnemonicParsing="false" onAction="#novaVenda" prefHeight="130.0" prefWidth="300.0" styleClass="botao" stylesheets="@tema.css" text="Realizar Venda" />
+                        <Button fx:id="listarVendasBT" layoutX="320.0" layoutY="155.0" mnemonicParsing="false" onAction="#listagemVendas" prefHeight="130.0" prefWidth="300.0" styleClass="botao" stylesheets="@tema.css" text="Listar todas as Vendas" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Serviços">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="novoAgendamentoBT" layoutX="220.0" layoutY="14.0" mnemonicParsing="false" onAction="#novaAgendamento" prefHeight="130.0" prefWidth="200.0" text="Novo Agendamento" />
+                        <Button fx:id="mudarAgendamento" layoutX="430.0" layoutY="14.0" mnemonicParsing="false" onAction="#mudarTagAgendamento" prefHeight="130.0" prefWidth="200.0" text="Mudar Status de Agend." />
+                        <Button fx:id="listarAgendaBT" layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#listagemAgendamentos" prefHeight="130.0" prefWidth="200.0" text="Listar toda Agenda" />
+                        <Button fx:id="listarServicosBT" layoutX="10.0" layoutY="155.0" mnemonicParsing="false" onAction="#listarTodosServicos" prefHeight="130.0" prefWidth="620.0" text="Listar todos serviços" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+  </children>
+</VBox>

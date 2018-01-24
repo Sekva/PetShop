@@ -1,7 +1,6 @@
 package org.grupin.entidades;
 
 
-import java.util.Date;
 import java.util.Random;
 
 public class Cliente {

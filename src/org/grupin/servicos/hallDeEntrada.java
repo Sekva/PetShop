@@ -12,7 +12,7 @@ public class hallDeEntrada {
     private final ControleAgendamentos controleAgendamentos;
     private final ControleProdutos controleProdutos;
     private final ControlesServicos controleServicos;
-    public final ControleVendas controleVendas;
+    private final ControleVendas controleVendas;
 
     public hallDeEntrada() {
         this.controleAgendamentos = new ControleAgendamentos();
@@ -46,7 +46,7 @@ public class hallDeEntrada {
 
         try {
             p = this.controleProdutos.pegarProduto(referencia);
-        } catch (Exception e) {
+        } catch (Exception excep) {
             throw new ArquivoNaoEscitoException();
         }
 

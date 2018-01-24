@@ -10,10 +10,6 @@ import org.grupin.entidades.Servico;
 import org.grupin.main.Main;
 import org.grupin.servicos.hallDeEntrada;
 
-import java.util.Date;
-
-import static com.sun.org.apache.xalan.internal.lib.ExsltStrings.split;
-
 public class NovoAgendamentoController {
 
     @FXML
@@ -80,12 +76,12 @@ public class NovoAgendamentoController {
                         palco.close();
 
                     } else {
-                        System.out.println("ORRA");
+                        //IGNORE System.out.println("ORRA");
 
                     }
 
                 } else {
-                    System.out.println("Nop");
+                    //IGNORE System.out.println("Nop");
                     //Login.novaJanela("");
                 }
 
@@ -93,7 +89,7 @@ public class NovoAgendamentoController {
 
             }
 
-        } catch (Exception e) {
+        } catch (Exception excep) {
             Main.novaJanela("problemaReferenciaInvalida.fxml", "");
         }
 

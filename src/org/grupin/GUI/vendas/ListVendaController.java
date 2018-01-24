@@ -10,7 +10,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import org.grupin.entidades.Produto;
 import org.grupin.entidades.Venda;
 import org.grupin.servicos.hallDeEntrada;
 
@@ -50,9 +49,9 @@ public class ListVendaController {
                 masterData.add(v);
             }
 
-        } catch (Exception e) {
-            System.out.println("Eita");
-            e.printStackTrace();
+        } catch (Exception excep) {
+            //IGNORE System.out.println("Eita");
+            excep.printStackTrace();
         }
         // Initially add all data to filtered data
         filteredData.addAll(masterData);
