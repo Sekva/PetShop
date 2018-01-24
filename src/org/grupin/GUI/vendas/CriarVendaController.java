@@ -50,7 +50,7 @@ public class CriarVendaController {
         String cpf = this.txtCPF.getText();
         String refProduto = this.txtRefProduto.getText();
 
-        int numVenda = new Random(10000).nextInt();
+        int numVenda = new Random().nextInt();
 
 
         if(tipoAnimal.equals("") || racaAnimal.equals("") || nomeAnimal.equals("")) {

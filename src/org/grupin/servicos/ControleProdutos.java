@@ -5,6 +5,7 @@ import org.grupin.exceptions.ArquivoNaoEscitoException;
 import org.grupin.exceptions.ProdutoNaoEncontradoException;
 import org.grupin.exceptions.ReferenciaInvalidaException;
 import org.grupin.repo.RepoProdutos;
+import org.grupin.repo.contratos.IRepoProdutos;
 
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 
 public class ControleProdutos {
 
-    private final RepoProdutos repo;
+    private final IRepoProdutos repo;
     private ArrayList<Produto> todosProdutos;
 
     public ControleProdutos() {
@@ -65,6 +66,8 @@ public class ControleProdutos {
         } catch (FileNotFoundException e) {
             throw new ArquivoNaoEscitoException();
         } catch (UnsupportedEncodingException e) {
+            throw new ArquivoNaoEscitoException();
+        } catch (Exception e) {
             throw new ArquivoNaoEscitoException();
         }
 

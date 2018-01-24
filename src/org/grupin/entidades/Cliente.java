@@ -17,7 +17,7 @@ public class Cliente {
         this.nomeCliente = nomeCliente;
         this.telefone = telefone;
         this.cpfCnpjCliente = cpfCnpjCliente;
-        this.idCliente = new Random(10000).nextInt();
+        this.idCliente = new Random().nextInt();
         this.animal = animal;
         this.endereco = null;
 
@@ -27,7 +27,7 @@ public class Cliente {
         this.nomeCliente = nomeCliente;
         this.telefone = telefone;
         this.cpfCnpjCliente = cpfCnpjCliente;
-        this.idCliente = new Random(10000).nextInt();
+        this.idCliente = new Random().nextInt();
         this.animal = animal;
         this.endereco = endereco;
     }
@@ -36,7 +36,7 @@ public class Cliente {
         this.nomeCliente = nomeCliente;
         this.telefone = telefone;
         this.cpfCnpjCliente = cpfCnpjCliente;
-        this.idCliente = new Random(10000).nextInt();
+        this.idCliente = new Random().nextInt();
     }
 
 

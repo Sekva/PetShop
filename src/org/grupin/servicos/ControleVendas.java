@@ -4,6 +4,7 @@ import org.grupin.entidades.Venda;
 import org.grupin.exceptions.ArquivoNaoEscitoException;
 import org.grupin.exceptions.NumVendaInvalidoException;
 import org.grupin.repo.RepoVendas;
+import org.grupin.repo.contratos.IRepoVendas;
 
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 
 public class ControleVendas {
 
-    public final RepoVendas repo;
+    public final IRepoVendas repo;
     private ArrayList<Venda> todasVendas;
 
     public ControleVendas() {
@@ -36,9 +37,10 @@ public class ControleVendas {
             throw new ArquivoNaoEscitoException();
 
         } catch(UnsupportedEncodingException e){
-
             throw new ArquivoNaoEscitoException();
 
+        }catch(Exception e){
+            throw new ArquivoNaoEscitoException();
 
         }
 

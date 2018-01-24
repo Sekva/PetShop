@@ -4,18 +4,19 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.grupin.entidades.Produto;
 import org.grupin.entidades.Servico;
+import org.grupin.repo.contratos.IRepoServicos;
 
 import java.io.*;
 import java.util.ArrayList;
 
-public class RepoServicos {
+public class RepoServicos implements IRepoServicos {
 
 
     private Gson gson;
     private ArrayList<Servico> listagem;
     private PrintWriter escrivao;
 
-
+    @Override
     public void adicionar(Servico servico) throws FileNotFoundException, UnsupportedEncodingException {
 
         this.listagem = this.listar();
@@ -25,7 +26,7 @@ public class RepoServicos {
 
     }
 
-
+    @Override
     public Servico remover(Servico p) throws FileNotFoundException, UnsupportedEncodingException {
 
         this.listagem = this.listar();
@@ -49,7 +50,7 @@ public class RepoServicos {
 
     }
 
-
+    @Override
     public ArrayList<Servico> listar() throws FileNotFoundException, UnsupportedEncodingException {
 
         this.gson = new Gson();
@@ -93,7 +94,7 @@ public class RepoServicos {
         this.escrivao.close();
     }
 
-
+    @Override
     public Servico acharServico(String referencia) throws FileNotFoundException, UnsupportedEncodingException {
 
         this.listagem = this.listar();

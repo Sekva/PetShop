@@ -10,7 +10,7 @@ public class Animal {
     private String racaAnimal;
 
     public Animal(String nomeAnimal, String tipoAnimal, String racaAnimal) {
-        this.idAnimal = new Random(10000).nextInt();
+        this.idAnimal = new Random().nextInt();
         this.nomeAnimal = nomeAnimal;
         this.tipoAnimal = tipoAnimal;
         this.racaAnimal = racaAnimal;

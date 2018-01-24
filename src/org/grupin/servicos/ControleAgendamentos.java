@@ -5,6 +5,7 @@ import org.grupin.exceptions.AgendamentoInvalidoPorId;
 import org.grupin.exceptions.AgendamentoNaoEncontradoException;
 import org.grupin.exceptions.ArquivoNaoEscitoException;
 import org.grupin.repo.RepoAgendamentos;
+import org.grupin.repo.contratos.IRepoAgendamentos;
 
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 
 public class ControleAgendamentos {
 
-    private final RepoAgendamentos repo;
+    private final IRepoAgendamentos repo;
 
 
     public ControleAgendamentos() {
@@ -46,13 +47,10 @@ public class ControleAgendamentos {
             this.repo.mudarTag(novaTag, idAgendamento);
             a = this.repo.buscarAgendamento(idAgendamento);
 
-        }  catch (FileNotFoundException e) {
+        }  catch (Exception e) {
 
             throw new ArquivoNaoEscitoException();
 
-        } catch (UnsupportedEncodingException e) {
-
-            throw new ArquivoNaoEscitoException();
         }
 
         return a;

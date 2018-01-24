@@ -76,6 +76,7 @@ public class RepoVendas implements IRepoVendas{
 
     }
 
+    @Override
     public Venda pegarVenda(int idVenda) throws FileNotFoundException, UnsupportedEncodingException {
 
         this.listagem = this.listar();

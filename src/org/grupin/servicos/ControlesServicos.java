@@ -6,6 +6,7 @@ import org.grupin.exceptions.ArquivoNaoEscitoException;
 import org.grupin.exceptions.ProdutoNaoEncontradoException;
 import org.grupin.exceptions.ReferenciaInvalidaException;
 import org.grupin.repo.RepoServicos;
+import org.grupin.repo.contratos.IRepoServicos;
 
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 public class ControlesServicos {
 
 
-    private final RepoServicos repo;
+    private final IRepoServicos repo;
     private ArrayList<Servico> todosProdutos;
 
     public ControlesServicos() {
@@ -63,6 +64,8 @@ public class ControlesServicos {
         } catch (FileNotFoundException e) {
             throw new ArquivoNaoEscitoException();
         } catch (UnsupportedEncodingException e) {
+            throw new ArquivoNaoEscitoException();
+        }  catch (Exception e) {
             throw new ArquivoNaoEscitoException();
         }
 

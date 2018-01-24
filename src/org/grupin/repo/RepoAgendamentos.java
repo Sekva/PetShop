@@ -25,6 +25,7 @@ public class RepoAgendamentos implements IRepoAgendamentos {
 
     }
 
+    @Override
     public void mudarTag(String novaTag , int idAgendamento) throws FileNotFoundException, UnsupportedEncodingException, AgendamentoNaoEncontradoException {
 
         this.listagem = this.listar();
@@ -75,8 +76,8 @@ public class RepoAgendamentos implements IRepoAgendamentos {
         return this.listagem;
     }
 
-    @Override
-    public void reescrever() throws FileNotFoundException, UnsupportedEncodingException {
+
+    private void reescrever() throws FileNotFoundException, UnsupportedEncodingException {
 
         this.gson = new Gson();
         String jsonTipo = this.gson.toJson(this.listagem);
@@ -94,6 +95,7 @@ public class RepoAgendamentos implements IRepoAgendamentos {
 
     }
 
+    @Override
     public Agendamento buscarAgendamento(int idAgendamento) throws FileNotFoundException, UnsupportedEncodingException {
 
         this.listagem = this.listar();
