@@ -13,5 +13,6 @@ por meio de arquivos json.
 ## Autores
 
 * **Matheus Machado Vieira** - [Sekva](https://github.com/sekva)
+* **Caio Cezar** - [Caio](https://github.com/caiotuchi)
 
 Veja também a lista de [contribuintes](https://github.com/sekva/PetShop/contributors).
