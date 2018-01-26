@@ -19,7 +19,7 @@ Veja também a lista de [contribuintes](https://github.com/sekva/PetShop/contrib
 
 <p align="center">
 
-<a href="license">
+<a href="LICENSE">
 <img alt="License" src="https://img.shields.io/github/license/eivindml/misty.svg">
 </a>
 
