@@ -15,7 +15,7 @@ public class RepoAgendamentos implements IRepoAgendamentos {
     private Gson gson;
 
     private ArrayList<Agendamento> listagem;
-    private PrintWriter escrivao;
+    private ;
 
     @Override
     public void adicionar(Agendamento agendamento) throws FileNotFoundException, UnsupportedEncodingException {

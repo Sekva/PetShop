@@ -14,7 +14,7 @@ public class ControlesServicos {
 
 
     private final RepoServicos repo;
-    private ArrayList<Servico> todosProdutos;
+    private ArrayList<Servico> todosServicos;
 
     public ControlesServicos() {
         this.repo = new RepoServicos();
@@ -73,8 +73,8 @@ public class ControlesServicos {
     public ArrayList<Servico> getTodosServicos() throws ArquivoNaoEscitoException {
 
         try {
-            this.todosProdutos = this.repo.listar();
-            return this.todosProdutos;
+            this.todosServicos = this.repo.listar();
+            return this.todosServicos;
 
         } catch (Exception excep) {
             throw  new ArquivoNaoEscitoException();
