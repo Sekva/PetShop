@@ -16,3 +16,13 @@ por meio de arquivos json.
 * **Caio Cezar** - [Caio](https://github.com/caiotuchi)
 
 Veja também a lista de [contribuintes](https://github.com/sekva/PetShop/contributors).
+
+<p align="center">
+
+<a href="license">
+<img alt="License" src="https://img.shields.io/github/license/eivindml/misty.svg">
+</a>
+
+<br />
+<br />
+</p>
