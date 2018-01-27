@@ -30,13 +30,11 @@ public class ListProdutoController {
     @FXML
     private TableColumn<Produto, Double> valor;
 
-    private ObservableList<Produto> masterData = FXCollections.observableArrayList();
-    private ObservableList<Produto> filteredData = FXCollections.observableArrayList();
+    private ObservableList<Produto> listaCompleta = FXCollections.observableArrayList();
+    private ObservableList<Produto> listaFiltrada = FXCollections.observableArrayList();
 
-    /**
-     * The constructor. The constructor is called before the initialize()
-     * method.
-     */
+
+
     public ListProdutoController() {
 
         hallDeEntrada fachada = new hallDeEntrada();
@@ -46,33 +44,31 @@ public class ListProdutoController {
             ArrayList<Produto> lista = fachada.listarProdutos();
 
             for (Produto p : lista) {
-                masterData.add(p);
+                listaCompleta.add(p);
             }
 
         } catch (Exception excep) {
-        //IGNORE System.out.println("Eita");
+
             excep.printStackTrace();
         }
-        // Initially add all data to filtered data
-        filteredData.addAll(masterData);
 
-        // Listen for changes in master data.
-        // Whenever the master data changes we must also update the filtered data.
-        masterData.addListener(new ListChangeListener<Produto>() {
+        listaFiltrada.addAll(listaCompleta);
+
+
+
+        listaCompleta.addListener(new ListChangeListener<Produto>() {
             @Override
             public void onChanged(ListChangeListener.Change<? extends Produto> change) {
-                updateFilteredData();
+                attFiltro();
             }
         });
     }
 
-    /**
-     * Initializes the controller class. This method is automatically called
-     * after the fxml file has been loaded.
-     */
+
+
     @FXML
     private void initialize() {
-        // Initialize the person table
+
         nomeProdutoCol.setCellValueFactory(
                 new PropertyValueFactory<Produto, String>("nomeProduto"));
         referenciaProdutoCol.setCellValueFactory(
@@ -82,65 +78,60 @@ public class ListProdutoController {
         valor.setCellValueFactory(
                 new PropertyValueFactory<Produto, Double>("valorProdutoVenda"));
 
-        // Add filtered data to the table
-        tabelaProduto.setItems(filteredData);
 
-        // Listen for text changes in the filter text field
+        tabelaProduto.setItems(listaFiltrada);
+
+
         filtroTxt.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable,
                                 String oldValue, String newValue) {
 
-                updateFilteredData();
+                attFiltro();
             }
         });
     }
 
-    /**
-     * Updates the filteredData to contain all data from the masterData that
-     * matches the current filter.
-     */
-    private void updateFilteredData() {
-        filteredData.clear();
 
-        for (Produto p : masterData) {
-            if (matchesFilter(p)) {
-                filteredData.add(p);
+
+    private void attFiltro() {
+        listaFiltrada.clear();
+
+        for (Produto p : listaCompleta) {
+            if (verficarFiltro(p)) {
+                listaFiltrada.add(p);
             }
         }
 
-        // Must re-sort table after items changed
-        reapplyTableSortOrder();
+
+        reordenar();
     }
 
-    /**
-     * Returns true if the person matches the current filter. Lower/Upper case
-     * is ignored.
-     *
-     * @param person
-     * @return
-     */
-    private boolean matchesFilter(Produto person) {
-        String filterString = filtroTxt.getText();
-        if (filterString == null || filterString.isEmpty()) {
-            // No filter --> Add all.
+
+
+
+    private boolean verficarFiltro(Produto p) {
+        String filtroString = filtroTxt.getText();
+        if (filtroString == null || filtroString.isEmpty()) {
+
             return true;
         }
 
-        String lowerCaseFilterString = filterString.toLowerCase();
+        String stingMin = filtroString.toLowerCase();
 
-        if (person.getNomeProduto().toLowerCase().indexOf(lowerCaseFilterString) != -1) {
+        if (p.getNomeProduto().toLowerCase().indexOf(stingMin) != -1) {
             return true;
-        } else if (person.getReferenciaProduto().toLowerCase().indexOf(lowerCaseFilterString) != -1) {
+        } else if (p.getReferenciaProduto().toLowerCase().indexOf(stingMin) != -1) {
             return true;
         }
 
-        return false; // Does not match
+        return false;
+
     }
 
-    private void reapplyTableSortOrder() {
-        ArrayList<TableColumn<Produto, ?>> sortOrder = new ArrayList<>(tabelaProduto.getSortOrder());
+    private void reordenar() {
+        ArrayList<TableColumn<Produto, ?>> ordem = new ArrayList<>(tabelaProduto.getSortOrder());
         tabelaProduto.getSortOrder().clear();
-        tabelaProduto.getSortOrder().addAll(sortOrder);
+        tabelaProduto.getSortOrder().addAll(ordem);
     }
 }

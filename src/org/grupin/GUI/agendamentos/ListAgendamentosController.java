@@ -35,8 +35,8 @@ public class ListAgendamentosController {
     @FXML
     private TableColumn<Agendamento, String> nomeServicoCol;
 
-    private ObservableList<Agendamento> masterData = FXCollections.observableArrayList();
-    private ObservableList<Agendamento> filteredData = FXCollections.observableArrayList();
+    private ObservableList<Agendamento> listaCompleta = FXCollections.observableArrayList();
+    private ObservableList<Agendamento> listaFiltrada = FXCollections.observableArrayList();
 
     public ListAgendamentosController() {
 
@@ -47,29 +47,27 @@ public class ListAgendamentosController {
             ArrayList<Agendamento> lista = fachada.listarAgendamentos();
 
             for (Agendamento p : lista) {
-                masterData.add(p);
+                listaCompleta.add(p);
             }
 
         } catch (Exception excep) {
-            //IGNORE System.out.println("Eita");
             excep.printStackTrace();
         }
-        // Initially add all data to filtered data
-        filteredData.addAll(masterData);
 
-        // Listen for changes in master data.
-        // Whenever the master data changes we must also update the filtered data.
-        masterData.addListener(new ListChangeListener<Agendamento>() {
+        listaFiltrada.addAll(listaCompleta);
+
+
+        listaCompleta.addListener(new ListChangeListener<Agendamento>() {
             @Override
             public void onChanged(ListChangeListener.Change<? extends Agendamento> change) {
-                updateFilteredData();
+                attFiltro();
             }
         });
     }
 
     @FXML
     private void initialize() {
-        // Initialize the person table
+
         nomeClienteCol.setCellValueFactory(
                 new PropertyValueFactory<Agendamento, String>("nomeCliente"));
         animalCol.setCellValueFactory(
@@ -85,58 +83,57 @@ public class ListAgendamentosController {
         nomeServicoCol.setCellValueFactory(
                 new PropertyValueFactory<Agendamento, String>("nomeServico"));
 
-        // Add filtered data to the table
-        tabelaProduto.setItems(filteredData);
+        tabelaProduto.setItems(listaFiltrada);
 
-        // Listen for text changes in the filter text field
+
         filtroTxt.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable,
                                 String oldValue, String newValue) {
 
-                updateFilteredData();
+                attFiltro();
             }
         });
     }
 
-    private void updateFilteredData() {
-        filteredData.clear();
+    private void attFiltro() {
+        listaFiltrada.clear();
 
-        for (Agendamento p : masterData) {
-            if (matchesFilter(p)) {
-                filteredData.add(p);
+        for (Agendamento p : listaCompleta) {
+            if (verificarFiltro(p)) {
+                listaFiltrada.add(p);
             }
         }
 
-        // Must re-sort table after items changed
-        reapplyTableSortOrder();
+
+        reordenar();
     }
 
-    private boolean matchesFilter(Agendamento person) {
-        String filterString = filtroTxt.getText();
-        if (filterString == null || filterString.isEmpty()) {
-            // No filter --> Add all.
+    private boolean verificarFiltro(Agendamento ag) {
+        String stringFiltro = filtroTxt.getText();
+        if (stringFiltro == null || stringFiltro.isEmpty()) {
+
             return true;
         }
 
-        String lowerCaseFilterString = filterString.toLowerCase();
+        String filtroMinusculo = stringFiltro.toLowerCase();
 
-        if (person.getCliente().getNomeCliente().toLowerCase().indexOf(lowerCaseFilterString) != -1) {
+        if (ag.getCliente().getNomeCliente().toLowerCase().indexOf(filtroMinusculo) != -1) {
             return true;
-        } else if (person.getAnimal().getNomeAnimal().toLowerCase().indexOf(lowerCaseFilterString) != -1) {
+        } else if (ag.getAnimal().getNomeAnimal().toLowerCase().indexOf(filtroMinusculo) != -1) {
             return true;
-        } else if (person.getTag().toLowerCase().indexOf(lowerCaseFilterString) != -1) {
+        } else if (ag.getTag().toLowerCase().indexOf(filtroMinusculo) != -1) {
             return true;
-        } else if (person.getNomeServico().toLowerCase().indexOf(lowerCaseFilterString) != -1) {
+        } else if (ag.getNomeServico().toLowerCase().indexOf(filtroMinusculo) != -1) {
             return true;
         }
 
-        return false; // Does not match
+        return false;
     }
 
-    private void reapplyTableSortOrder() {
-        ArrayList<TableColumn<Agendamento, ?>> sortOrder = new ArrayList<>(tabelaProduto.getSortOrder());
+    private void reordenar() {
+        ArrayList<TableColumn<Agendamento, ?>> ordem = new ArrayList<>(tabelaProduto.getSortOrder());
         tabelaProduto.getSortOrder().clear();
-        tabelaProduto.getSortOrder().addAll(sortOrder);
+        tabelaProduto.getSortOrder().addAll(ordem);
     }
 }

@@ -54,63 +54,87 @@ public class Cliente {
 
 
     /** Metodo para retorno de id do cliente
-     * @return int idCliente*/
+     * @return int - idCliente
+     */
     public int getIdCliente() {
         return this.idCliente;
     }
 
 
     /** Metodo para retorno de endereco de residencia do cliente
-     * @return Endereco endereco*/
+     * @return Endereco - endereco
+     */
     public Endereco getEndereco() {
         return this.endereco;
     }
 
 
     /** Metodo para modificacao de endereco de residencia do cliente
-     * @param endereco*/
+     * @param endereco Endereco - Novo endereco do cliente
+     */
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
 
 
     /** Metodo para retorno de objeto animal do cliente
-     * @return animal*/
+     * @return Animal - animal
+     */
     public Animal getAnimal() {
         return this.animal;
     }
 
 
     /** Metodo para modificacao do objeto animal do cliente
-     * @param animal*/
+     * @param animal Animal - Novo estado de animal ou novo animal de cliente
+     */
     public void setAnimal(Animal animal) {
         this.animal = animal;
     }
 
 
     /** Metodo para retoro do nome do cliente
-     * @return nomeCliente
+     * @return String - nomeCliente
      */
     public java.lang.String getNomeCliente() {
         return this.nomeCliente;
     }
 
+
+    /** Metodo para modificacao do nome do cliente
+     * @param nomeCliente String - Nome do cliente corrigido/alterado
+     */
     public void setNomeCliente(java.lang.String nomeCliente) {
         this.nomeCliente = nomeCliente;
     }
 
+
+    /** Metodo para retorno de numero de telefone para contato
+     * @return String - telefone
+     */
     public java.lang.String getTelefone() {
         return this.telefone;
     }
 
+
+    /** Metodo para modificacao numero de telefone para contato
+     * @param telefone String - Novo numero para contato
+     */
     public void setTelefone(java.lang.String telefone) {
         this.telefone = telefone;
     }
 
+
+    /** Metodo para retorno do documento do cliente
+     * @return String - cpfCnpjCliente
+     */
     public java.lang.String getCpfCnpjCliente() {
         return this.cpfCnpjCliente;
     }
 
+    /** Metodo para correcao do documento do cliente
+     * @param cpfCnpjCliente String - Documento corrigido do cliente
+     */
     public void setCpfCnpjCliente(java.lang.String cpfCnpjCliente) {
         this.cpfCnpjCliente = cpfCnpjCliente;
     }

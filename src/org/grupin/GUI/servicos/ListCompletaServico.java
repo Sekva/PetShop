@@ -31,13 +31,11 @@ public class ListCompletaServico {
     @FXML
     private TableColumn<Servico, String> categoria;
 
-    private ObservableList<Servico> masterData = FXCollections.observableArrayList();
-    private ObservableList<Servico> filteredData = FXCollections.observableArrayList();
+    private ObservableList<Servico> listaCompleta = FXCollections.observableArrayList();
+    private ObservableList<Servico> listaFiltrada = FXCollections.observableArrayList();
 
-    /**
-     * The constructor. The constructor is called before the initialize()
-     * method.
-     */
+
+
     public ListCompletaServico() {
 
         hallDeEntrada fachada = new hallDeEntrada();
@@ -47,33 +45,30 @@ public class ListCompletaServico {
             ArrayList<Servico> lista = fachada.listarServicos();
 
             for (Servico p : lista) {
-                masterData.add(p);
+                listaCompleta.add(p);
             }
 
         } catch (Exception excep) {
-            //IGNORE System.out.println("Eita");
+
             excep.printStackTrace();
         }
-        // Initially add all data to filtered data
-        filteredData.addAll(masterData);
 
-        // Listen for changes in master data.
-        // Whenever the master data changes we must also update the filtered data.
-        masterData.addListener(new ListChangeListener<Servico>() {
+        listaFiltrada.addAll(listaCompleta);
+
+
+        listaCompleta.addListener(new ListChangeListener<Servico>() {
             @Override
             public void onChanged(ListChangeListener.Change<? extends Servico> change) {
-                updateFilteredData();
+                attFiltro();
             }
         });
     }
 
-    /**
-     * Initializes the controller class. This method is automatically called
-     * after the fxml file has been loaded.
-     */
+
+
     @FXML
     private void initialize() {
-        // Initialize the person table
+
         nomeServicoCol.setCellValueFactory(
                 new PropertyValueFactory<Servico, String>("nomeProduto"));
         referenciaServicoCol.setCellValueFactory(
@@ -83,68 +78,62 @@ public class ListCompletaServico {
         categoria.setCellValueFactory(
                 new PropertyValueFactory<Servico, String>("categoriaProduto"));
 
-        // Add filtered data to the table
-        tabelaServicos.setItems(filteredData);
 
-        // Listen for text changes in the filter text field
+        tabelaServicos.setItems(listaFiltrada);
+
+
         filtroTxt.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable,
                                 String oldValue, String newValue) {
 
-                updateFilteredData();
+                attFiltro();
             }
         });
     }
 
-    /**
-     * Updates the filteredData to contain all data from the masterData that
-     * matches the current filter.
-     */
-    private void updateFilteredData() {
-        filteredData.clear();
 
-        for (Servico p : masterData) {
-            if (matchesFilter(p)) {
-                filteredData.add(p);
+
+    private void attFiltro() {
+        listaFiltrada.clear();
+
+        for (Servico p : listaCompleta) {
+            if (verificarFiltro(p)) {
+                listaFiltrada.add(p);
             }
         }
 
-        // Must re-sort table after items changed
-        reapplyTableSortOrder();
+
+        reordenar();
     }
 
-    /**
-     * Returns true if the person matches the current filter. Lower/Upper case
-     * is ignored.
-     *
-     * @param person
-     * @return
-     */
-    private boolean matchesFilter(Servico person) {
-        String filterString = filtroTxt.getText();
-        if (filterString == null || filterString.isEmpty()) {
-            // No filter --> Add all.
+
+
+    private boolean verificarFiltro(Servico s) {
+        String txtFiltro = filtroTxt.getText();
+        if (txtFiltro == null || txtFiltro.isEmpty()) {
+
             return true;
         }
 
-        String lowerCaseFilterString = filterString.toLowerCase();
+        String strFiltroMin = txtFiltro.toLowerCase();
 
-        if (person.getNomeProduto().toLowerCase().indexOf(lowerCaseFilterString) != -1) {
+        if (s.getNomeProduto().toLowerCase().indexOf(strFiltroMin) != -1) {
             return true;
-        } else if (person.getReferenciaProduto().toLowerCase().indexOf(lowerCaseFilterString) != -1) {
+        } else if (s.getReferenciaProduto().toLowerCase().indexOf(strFiltroMin) != -1) {
             return true;
-        } else if(person.getCategoriaProduto().toLowerCase().indexOf(lowerCaseFilterString) != -1) {
+        } else if(s.getCategoriaProduto().toLowerCase().indexOf(strFiltroMin) != -1) {
             return true;
         }
 
-        return false; // Does not match
+        return false;
+
     }
 
-    private void reapplyTableSortOrder() {
-        ArrayList<TableColumn<Servico, ?>> sortOrder = new ArrayList<>(tabelaServicos.getSortOrder());
+    private void reordenar() {
+        ArrayList<TableColumn<Servico, ?>> ordem = new ArrayList<>(tabelaServicos.getSortOrder());
         tabelaServicos.getSortOrder().clear();
-        tabelaServicos.getSortOrder().addAll(sortOrder);
+        tabelaServicos.getSortOrder().addAll(ordem);
     }
 
 }

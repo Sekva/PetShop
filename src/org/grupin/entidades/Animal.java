@@ -21,35 +21,40 @@ public class Animal {
     }
 
     /** Metodo para retorno do id do animal
-     * @return int - idAnimal*/
+     * @return int - idAnimal
+     */
     public int getIdAnimal() {
         return this.idAnimal;
     }
 
 
     /** Metodo para retorno do nome do animal
-     * @return String - nomeAnimal*/
+     * @return String - nomeAnimal
+     */
     public String getNomeAnimal() {
         return this.nomeAnimal;
     }
 
 
     /** Metodo para modificacao de nome do animal
-     * @param nomeAnimal - Novo nome do animal*/
+     * @param nomeAnimal String - Novo nome do animal
+     */
     public void setNomeAnimal(String nomeAnimal) {
         this.nomeAnimal = nomeAnimal;
     }
 
 
     /** Metodo para retorno do tipo do animal
-     * @return String - tipoAnimal*/
+     * @return String - tipoAnimal
+     */
     public String getTipoAnimal() {
         return this.tipoAnimal;
     }
 
 
     /**Metodo para retorno da raca do animal
-     * @return String - racaAnimal*/
+     * @return String - racaAnimal
+     */
     public String getRacaAnimal() {
         return this.racaAnimal;
     }
