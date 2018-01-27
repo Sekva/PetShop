@@ -101,14 +101,6 @@ public class Cliente {
     }
 
 
-    /** Metodo para modificacao do nome do cliente
-     * @param nomeCliente String - Nome do cliente corrigido/alterado
-     */
-    public void setNomeCliente(java.lang.String nomeCliente) {
-        this.nomeCliente = nomeCliente;
-    }
-
-
     /** Metodo para retorno de numero de telefone para contato
      * @return String - telefone
      */
@@ -131,13 +123,4 @@ public class Cliente {
     public java.lang.String getCpfCnpjCliente() {
         return this.cpfCnpjCliente;
     }
-
-    /** Metodo para correcao do documento do cliente
-     * @param cpfCnpjCliente String - Documento corrigido do cliente
-     */
-    public void setCpfCnpjCliente(java.lang.String cpfCnpjCliente) {
-        this.cpfCnpjCliente = cpfCnpjCliente;
-    }
-
-
 }

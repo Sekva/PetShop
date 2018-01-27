@@ -1,6 +1,9 @@
-//relevância a ser questionada, talvez excluir
-
 package org.grupin.entidades;
+
+/** Classe para objetos da classe Endereco, onde serão contidas informacoes para este.
+ * @author Jose Diego
+ * @author Caio Cezar
+ */
 public class Endereco {
 
     private final String lagradouro;

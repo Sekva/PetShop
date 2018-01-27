@@ -37,9 +37,9 @@ public class Agendamento {
     }
 
 
-    /** Alguns metodos ja implementados em outras classes:
+    /** Alguns metodos ja implementados em outras classes
      * gambiarra pra GUI funcionar
-     * revisao mais tarde :3
+     * revisao mais tarde
      */
 
     /** Metodo para retorno da identificacao do servico
@@ -98,14 +98,6 @@ public class Agendamento {
     }
 
 
-    /** Metodo para correcao do nome do animal ao qual sera prestado servico
-     * @param nomeAnimal String - Nome corrigido do animal
-     */
-    public void setNomeAnimal(String nomeAnimal) {
-        this.nomeAnimal = nomeAnimal;
-    }
-
-
     /** Metodo para retorno de id do agendamento de servico
      * @return int - idAgendamento
      */
@@ -114,55 +106,80 @@ public class Agendamento {
     }
 
 
-
-    public void setIdAgendamento(int idAgendamento) {
-        this.idAgendamento = idAgendamento;
-    }
-
+    /** Metodo para retorno da data marcada para o servico
+     * @return String - dataMarcada
+     */
     public String getDataMarcada() {
         return this.dataMarcada;
     }
 
+
+    /** Metodo para modificacao de data programada do servico
+     * @param dataMarcada String - Nova data estipulada para realizacao do servico
+     */
     public void setDataMarcada(String dataMarcada) {
         this.dataMarcada = dataMarcada;
     }
 
+
+    /** Metodo para retorno da data em que foi feito o agendamento do servico
+     * @return dataDeExpedicao
+     */
     public Date getDataDeExpedicao() {
         return this.dataDeExpedicao;
     }
 
-    public void setDataDeExpedicao(Date dataDeExpedicao) {
-        this.dataDeExpedicao = dataDeExpedicao;
-    }
 
+    /** Metodo para retorno do servico requisitado
+     * @return String - servico
+     */
     public Servico getServico() {
         return servico;
     }
 
+
+    /** Metodo para modificacao de servico a ser realizado
+     * @param servico Servico - Novo servico que sera realizado
+     */
     public void setServico(Servico servico) {
         this.servico = servico;
     }
 
+
+    /** Metodo para retorno do cliente que requisitou o servico
+     * @return Cliente - cliente
+     */
     public Cliente getCliente() {
         return this.cliente;
     }
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
 
+    /** Metodo para retorno do animal que recebera o servico
+     * @return Animal - animal
+     */
     public Animal getAnimal() {
         return this.animal;
     }
 
+    /** Metodo para alteracao de qual animal recebera o servico
+     * @param animal Animal - Novo animal que passara a receber o servico
+     */
     public void setAnimal(Animal animal) {
         this.animal = animal;
     }
 
+
+    /** Metodo para retorno do status(tag) do servico
+     * @return String - tag
+     */
     public String getTag() {
         return this.tag;
     }
 
+
+     /** Metodo para modificacao do status (tag) do servico
+     * @param tag String - Status atualizado do servico
+     */
     public void setTag(String tag) {
         this.tag = tag;
     }

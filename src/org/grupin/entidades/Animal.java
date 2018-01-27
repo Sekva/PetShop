@@ -36,14 +36,6 @@ public class Animal {
     }
 
 
-    /** Metodo para modificacao de nome do animal
-     * @param nomeAnimal String - Novo nome do animal
-     */
-    public void setNomeAnimal(String nomeAnimal) {
-        this.nomeAnimal = nomeAnimal;
-    }
-
-
     /** Metodo para retorno do tipo do animal
      * @return String - tipoAnimal
      */

@@ -9,13 +9,30 @@ import org.grupin.repo.contratos.IRepoAgendamentos;
 import java.io.*;
 import java.util.ArrayList;
 
+
+/** Classe para uso de armazenamento de agendamentos na pasta ./jsons
+ * @author Matheus Machado Vieira
+ * @see org.grupin.repo.contratos.IRepoAgendamentos para
+ * mais informações sobre o contrato para reimplementar a forma de armazenamento
+ * persistente.
+ *
+ */
+
 public class RepoAgendamentos implements IRepoAgendamentos {
 
 
     private Gson gson;
-
     private ArrayList<Agendamento> listagem;
     private PrintWriter escrivao;
+
+
+    /**
+     * Recria o array list de agendamentos do arquivo agendamentos.json
+     * adiciona o novo agendamento e reescreve o arquivo.
+     * @param agendamento agendamento a ser adicionado
+     * @throws FileNotFoundException Arquivo nao encontrado
+     * @throws UnsupportedEncodingException Encoding nao suportado para o arquivo no SO em uso
+     */
 
     @Override
     public void adicionar(Agendamento agendamento) throws FileNotFoundException, UnsupportedEncodingException {
@@ -25,6 +42,18 @@ public class RepoAgendamentos implements IRepoAgendamentos {
 
     }
 
+
+    /**
+     * Metodo para mudar o estado de um agendamento, recria o arraylist da memoria,
+     * busca o agendamento a partir do indentificador,
+     * altera o estado do agendamento e reescreve no arquivo
+     * @param novaTag novo estado do agendamento
+     * @param idAgendamento numero identificador do agendamento
+     * @throws FileNotFoundException Arquivo nao encontrado
+     * @throws UnsupportedEncodingException Encoding nao suportado para o arquivo no SO em uso
+     * @throws AgendamentoNaoEncontradoException Caso agendamento não seja encontrado
+     * @see org.grupin.entidades.Agendamento
+     */
     @Override
     public void mudarTag(String novaTag , int idAgendamento) throws FileNotFoundException, UnsupportedEncodingException, AgendamentoNaoEncontradoException {
 
@@ -53,6 +82,14 @@ public class RepoAgendamentos implements IRepoAgendamentos {
 
     }
 
+
+    /**
+     * Metodos que recria o arraylist de agendamentos a partir do arquivo
+     * agendamentos.json para uso interno e externo
+     * @return a arraylist com todos os agendamentos {@code ArrayList<Agendamento>}
+     * @throws FileNotFoundException Arquivo nao encontrado
+     * @throws UnsupportedEncodingException Encoding nao suportado para o arquivo no SO em uso
+     */
     @Override
     public ArrayList<Agendamento> listar() throws FileNotFoundException, UnsupportedEncodingException{
 
@@ -77,6 +114,11 @@ public class RepoAgendamentos implements IRepoAgendamentos {
     }
 
 
+    /**
+     * Metodo que reescreve a arraylist de agendamentos no arquivo agendamentos.json
+     * @throws FileNotFoundException Arquivo nao encontrado
+     * @throws UnsupportedEncodingException Encoding nao suportado para o arquivo no SO em uso
+     */
     private void reescrever() throws FileNotFoundException, UnsupportedEncodingException {
 
         this.gson = new Gson();
@@ -87,6 +129,13 @@ public class RepoAgendamentos implements IRepoAgendamentos {
 
     }
 
+
+    /**
+     * Metodo para limpeza do arquivo de agendamentos por segurança,
+     * caso houver alguma informação legada no buffer
+     * @throws FileNotFoundException Arquivo nao encontrado
+     * @throws UnsupportedEncodingException Encoding nao suportado para o arquivo no SO em uso
+     */
     private void limparArquivo() throws FileNotFoundException, UnsupportedEncodingException {
 
         this.escrivao = new PrintWriter("./jsons/agendamentos.json", "UTF-8");
@@ -95,6 +144,14 @@ public class RepoAgendamentos implements IRepoAgendamentos {
 
     }
 
+    /**
+     * Metodo de busca para agendamentos. Usa o indentificador
+     * para encontrar dado agendamento e retornar
+     * @param idAgendamento indentificador do agendamento
+     * @return retorna um unico {@code Agendamento}
+     * @throws FileNotFoundException Arquivo nao encontrado
+     * @throws UnsupportedEncodingException Encoding nao suportado para o arquivo no SO em uso
+     */
     @Override
     public Agendamento buscarAgendamento(int idAgendamento) throws FileNotFoundException, UnsupportedEncodingException {
 
