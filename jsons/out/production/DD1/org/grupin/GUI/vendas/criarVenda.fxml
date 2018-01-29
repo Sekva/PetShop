@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.grupin.GUI.vendas.CriarVendaController">
+   <children>
+      <Label layoutX="50.0" layoutY="90.0" text="CPF:" />
+      <Label layoutX="50.0" layoutY="30.0" text="Nome:" />
+      <Label layoutX="50.0" layoutY="120.0" text="*Tipo de animal:" />
+      <Label layoutX="50.0" layoutY="210.0" text="Ref. Produto:" />
+      <Label layoutX="50.0" layoutY="60.0" text="Telefone:" />
+      <Label layoutX="50.0" layoutY="180.0" text="*Raça do animal:" />
+      <Label layoutX="50.0" layoutY="150.0" text="*Nome do animal:" />
+      <Label layoutX="47.0" layoutY="238.0" text="(*) Opcional">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="190.0" layoutY="25.0" />
+      <TextField fx:id="txtTel" layoutX="190.0" layoutY="55.0" />
+      <TextField fx:id="txtCPF" layoutX="190.0" layoutY="85.0" />
+      <TextField fx:id="txtTipoAnimal" layoutX="190.0" layoutY="115.0" />
+      <TextField fx:id="txtNomeAnimal" layoutX="190.0" layoutY="145.0" />
+      <TextField fx:id="txtRacaDoAnimal" layoutX="190.0" layoutY="175.0" />
+      <TextField fx:id="txtRefProduto" layoutX="190.0" layoutY="205.0" />
+      <Button layoutX="210.0" layoutY="236.0" mnemonicParsing="false" onAction="#criarVenda" prefHeight="26.0" prefWidth="118.0" text="OK" />
+   </children>
+</AnchorPane>

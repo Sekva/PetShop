@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 import org.grupin.entidades.Produto;
 import org.grupin.exceptions.ArquivoNaoEscitoException;
 import org.grupin.main.Main;
-import org.grupin.servicos.hallDeEntrada;
+import org.grupin.servicos.HallDeEntrada;
 
 public class NovoProdutoController {
 
@@ -25,9 +25,9 @@ public class NovoProdutoController {
     @FXML
     private TextField txtQuantidade;
 
-    private hallDeEntrada fachada;
+    private HallDeEntrada fachada;
 
-    public NovoProdutoController() {this.fachada = new hallDeEntrada();}
+    public NovoProdutoController() {this.fachada = new HallDeEntrada();}
 
     @FXML
     private void registrar() {

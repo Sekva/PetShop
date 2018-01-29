@@ -3,7 +3,6 @@ package org.grupin.repo;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.grupin.entidades.Produto;
-import org.grupin.exceptions.AgendamentoNaoEncontradoException;
 import org.grupin.repo.contratos.IRepoProdutos;
 
 import java.io.*;

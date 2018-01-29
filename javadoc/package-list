@@ -1,0 +1,11 @@
+org.grupin.GUI
+org.grupin.GUI.agendamentos
+org.grupin.GUI.produtos
+org.grupin.GUI.servicos
+org.grupin.GUI.vendas
+org.grupin.entidades
+org.grupin.exceptions
+org.grupin.main
+org.grupin.repo
+org.grupin.repo.contratos
+org.grupin.servicos

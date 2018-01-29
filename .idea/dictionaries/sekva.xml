@@ -2,72 +2,191 @@
   <dictionary name="sekva">
     <words>
       <w>aaaa</w>
+      <w>abstrata</w>
+      <w>adiciona</w>
+      <w>adicionada</w>
       <w>adicionado</w>
+      <w>adição</w>
       <w>agend</w>
+      <w>agendado</w>
       <w>ainda</w>
       <w>ajuda</w>
       <w>algo</w>
+      <w>alguma</w>
+      <w>alguns</w>
+      <w>altera</w>
+      <w>alteracao</w>
+      <w>apenas</w>
+      <w>aproveitado</w>
       <w>aqui</w>
+      <w>armazenamento</w>
+      <w>arraylist</w>
       <w>asfasf</w>
+      <w>atributo</w>
+      <w>atributos</w>
+      <w>atualizada</w>
+      <w>atualizado</w>
+      <w>atualizar</w>
+      <w>basicas</w>
       <w>botao</w>
       <w>busca</w>
+      <w>buscada</w>
+      <w>buscado</w>
+      <w>cachorro</w>
+      <w>cada</w>
       <w>cargador</w>
       <w>cena</w>
+      <w>classe</w>
       <w>clicado</w>
       <w>completa</w>
+      <w>contato</w>
+      <w>contem</w>
+      <w>contera</w>
+      <w>contexto</w>
+      <w>contidas</w>
       <w>controlador</w>
       <w>controles</w>
+      <w>correcao</w>
+      <w>corrigido</w>
       <w>dados</w>
+      <w>definicao</w>
+      <w>dentro</w>
+      <w>deste</w>
+      <w>diminui</w>
+      <w>documento</w>
+      <w>encontrar</w>
+      <w>específico</w>
+      <w>este</w>
+      <w>estipulada</w>
+      <w>estoque</w>
       <w>excep</w>
+      <w>externo</w>
       <w>fachada</w>
       <w>fechar</w>
+      <w>feito</w>
       <w>filtrada</w>
       <w>filtrados</w>
       <w>filtro</w>
+      <w>fornecedor</w>
+      <w>funcionar</w>
+      <w>gambiarra</w>
+      <w>gato</w>
       <w>gerente</w>
       <w>grupin</w>
+      <w>herda</w>
+      <w>houver</w>
+      <w>identificacao</w>
+      <w>identificador</w>
+      <w>implementados</w>
+      <w>implementações</w>
       <w>incorreto</w>
       <w>indentificador</w>
+      <w>indentificação</w>
+      <w>informacoes</w>
+      <w>inicializado</w>
+      <w>intentificador</w>
+      <w>interno</w>
       <w>invalidos</w>
+      <w>legada</w>
       <w>letras</w>
+      <w>limpeza</w>
       <w>lista</w>
+      <w>listados</w>
       <w>logar</w>
+      <w>logradouro</w>
       <w>loja</w>
+      <w>mais</w>
       <w>maiuscula</w>
+      <w>meio</w>
+      <w>memoria</w>
+      <w>metodo</w>
       <w>metodos</w>
+      <w>minusculo</w>
+      <w>modificacao</w>
+      <w>momento</w>
       <w>mudada</w>
+      <w>obejeto</w>
+      <w>objeto</w>
+      <w>onde</w>
+      <w>opcao</w>
+      <w>opcionais</w>
       <w>opcional</w>
+      <w>ordem</w>
       <w>orra</w>
+      <w>outras</w>
       <w>palco</w>
+      <w>pararemoção</w>
+      <w>partir</w>
+      <w>passara</w>
       <w>peto</w>
       <w>pode</w>
+      <w>possiveis</w>
+      <w>possui</w>
+      <w>preco</w>
+      <w>presentes</w>
+      <w>prestado</w>
+      <w>prestados</w>
       <w>printado</w>
       <w>problema</w>
       <w>problemas</w>
       <w>prodtuos</w>
       <w>programa</w>
+      <w>programada</w>
+      <w>prouduto</w>
+      <w>qual</w>
       <w>raça</w>
+      <w>realizacao</w>
+      <w>realizada</w>
+      <w>realizado</w>
       <w>realizar</w>
+      <w>recebe</w>
+      <w>receber</w>
+      <w>recebera</w>
+      <w>recria</w>
+      <w>recriar</w>
       <w>reescreve</w>
+      <w>removido</w>
+      <w>remoção</w>
+      <w>reordenar</w>
+      <w>repositorio</w>
+      <w>requisitado</w>
+      <w>requisitou</w>
+      <w>residencia</w>
+      <w>retorna</w>
+      <w>retornar</w>
+      <w>retorno</w>
+      <w>retoro</w>
+      <w>revisao</w>
       <w>sair</w>
+      <w>salva</w>
+      <w>segurança</w>
+      <w>seja</w>
       <w>senha</w>
+      <w>sentido</w>
+      <w>sera</w>
       <w>servico</w>
       <w>servicos</w>
       <w>serviço</w>
       <w>serviços</w>
+      <w>serão</w>
+      <w>seus</w>
       <w>shopo</w>
       <w>sobre</w>
       <w>suportado</w>
       <w>tabela</w>
+      <w>tarde</w>
       <w>tela</w>
       <w>tema</w>
       <w>titulo</w>
       <w>toda</w>
       <w>tver</w>
+      <w>unica</w>
+      <w>unico</w>
       <w>valores</w>
       <w>vazia</w>
       <w>vendedor</w>
       <w>vendendor</w>
+      <w>verficar</w>
       <w>verificar</w>
     </words>
   </dictionary>

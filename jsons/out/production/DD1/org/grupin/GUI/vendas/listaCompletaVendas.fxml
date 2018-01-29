@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.grupin.GUI.vendas.ListVendaController">
+   <children>
+      <TableView fx:id="tabelaVendas" layoutX="14.0" layoutY="50.0" prefHeight="372.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="nomeClienteCol" prefWidth="171.0" text="Cliente" />
+            <TableColumn fx:id="numVenda" prefWidth="75.0" text="N.Venda" />
+          <TableColumn fx:id="nomeProdutoCol" prefWidth="129.0" text="Produto" />
+            <TableColumn fx:id="valor" prefWidth="71.0" text="R$" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelFiltro" layoutX="37.0" layoutY="14.0" prefHeight="28.0" prefWidth="74.0" text="Filtro:" />
+      <TextField fx:id="filtroTxt" layoutX="93.0" layoutY="15.0" prefHeight="28.0" prefWidth="237.0" />
+   </children>
+</AnchorPane>

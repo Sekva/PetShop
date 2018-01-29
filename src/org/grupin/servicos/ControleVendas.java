@@ -4,21 +4,32 @@ import org.grupin.entidades.Venda;
 import org.grupin.exceptions.ArquivoNaoEscitoException;
 import org.grupin.exceptions.NumVendaInvalidoException;
 import org.grupin.repo.RepoVendas;
+import org.grupin.repo.contratos.IRepoVendas;
 
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
+/**
+ * Classe para controle de listagem de vendas
+ * @author Matheus Machado Vieira
+ * @see org.grupin.entidades.Venda
+ */
 public class ControleVendas {
 
-    public final RepoVendas repo;
+    public final IRepoVendas repo;
     private ArrayList<Venda> todasVendas;
 
     public ControleVendas() {
         this.repo = new RepoVendas();
     }
 
-
+    /**
+     * Metodo para adição de nova venda realizada ao repositorio
+     * @param venda Venda a ser adicionada
+     * @throws ArquivoNaoEscitoException
+     * @throws NumVendaInvalidoException
+     */
     public void addVenda(Venda venda)  throws ArquivoNaoEscitoException, NumVendaInvalidoException{
 
 
@@ -47,10 +58,11 @@ public class ControleVendas {
 
     }
 
-
-
-
-
+    /**
+     * Metodo que retorna todas as vendas por meio da arraylist de vendas
+     * @return {@code ArrayList<Venda>}
+     * @throws ArquivoNaoEscitoException
+     */
     public ArrayList<Venda> getTodasVendas() throws ArquivoNaoEscitoException{
         try {
             this.todasVendas = this.repo.listar();

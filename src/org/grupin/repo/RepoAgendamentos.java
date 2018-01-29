@@ -96,19 +96,32 @@ public class RepoAgendamentos implements IRepoAgendamentos {
         this.gson = new Gson();
         BufferedReader br;
         try {
+            System.out.println("aqui 4");
+
             br = new BufferedReader(new FileReader("./jsons/agendamentos.json"));
             br.close();
         }catch (Exception excep) {
+            System.out.println("aqui 5");
+
             this.limparArquivo();
         }
 
         br = new BufferedReader(new FileReader("./jsons/agendamentos.json"));
+        System.out.println("aqui 6");
+
         //Redundancias e coisa estranhas na linha abaixo graças à biblioteca gson
+
+        //LINHA ABAIXO NAO FUNCIONA NO JAR
         this.listagem = gson.fromJson(br, new TypeToken<ArrayList<Agendamento>>(){}.getType());
+        System.out.println("aqui 7");
 
         if(this.listagem == null) {
+            System.out.println("aqui 8");
+
             this.listagem = new ArrayList<>();
         }
+
+        System.out.println("aqui 9");
 
         return this.listagem;
     }

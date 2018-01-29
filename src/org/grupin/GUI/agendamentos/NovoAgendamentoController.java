@@ -8,7 +8,7 @@ import org.grupin.entidades.Animal;
 import org.grupin.entidades.Cliente;
 import org.grupin.entidades.Servico;
 import org.grupin.main.Main;
-import org.grupin.servicos.hallDeEntrada;
+import org.grupin.servicos.HallDeEntrada;
 
 public class NovoAgendamentoController {
 
@@ -36,10 +36,10 @@ public class NovoAgendamentoController {
     @FXML
     private TextField txtRefServico;
 
-    private hallDeEntrada fachada;
+    private HallDeEntrada fachada;
 
     public NovoAgendamentoController(){
-        this.fachada = new hallDeEntrada();
+        this.fachada = new HallDeEntrada();
     }
 
     @FXML

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.grupin.GUI.LoginController">
+   <children>
+      <Label layoutX="85.0" layoutY="42.0" text="Login:" />
+      <Label layoutX="85.0" layoutY="101.0" text="Senha:" />
+      <TextField fx:id="txtLogin" layoutX="185.0" layoutY="37.0" />
+      <TextField fx:id="txtSenha" layoutX="185.0" layoutY="96.0" />
+      <Button layoutX="201.0" layoutY="149.0" mnemonicParsing="false" text="Logar" onAction="#logar" />
+   </children>
+</AnchorPane>

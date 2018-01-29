@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.grupin.main.Main;
-import org.grupin.servicos.hallDeEntrada;
+import org.grupin.servicos.HallDeEntrada;
 
 public class MudarTagAgendamento {
 
@@ -15,9 +15,9 @@ public class MudarTagAgendamento {
     private TextField txtNovoEstado;
 
 
-    private hallDeEntrada fachada;
+    private HallDeEntrada fachada;
     public MudarTagAgendamento() {
-        this.fachada = new hallDeEntrada();
+        this.fachada = new HallDeEntrada();
     }
 
     @FXML

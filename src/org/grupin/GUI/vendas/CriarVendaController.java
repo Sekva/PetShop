@@ -8,7 +8,7 @@ import org.grupin.entidades.Cliente;
 import org.grupin.entidades.Produto;
 import org.grupin.entidades.Venda;
 import org.grupin.main.Main;
-import org.grupin.servicos.hallDeEntrada;
+import org.grupin.servicos.HallDeEntrada;
 
 import java.util.Random;
 
@@ -37,10 +37,10 @@ public class CriarVendaController {
     @FXML
     private TextField txtRefProduto;
 
-    private hallDeEntrada fachada;
+    private HallDeEntrada fachada;
 
     public CriarVendaController() {
-        this.fachada = new hallDeEntrada();
+        this.fachada = new HallDeEntrada();
     }
 
     @FXML
@@ -140,16 +140,6 @@ public class CriarVendaController {
             }
         }
 
-
-
-
-
-
-
     }
-
-
-
-
 
 }

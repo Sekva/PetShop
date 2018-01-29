@@ -1,5 +1,4 @@
 package org.grupin.entidades;
-import java.util.Random;
 
 
 /** Classe para objetos do tipo Produto, que contera informacoes e metodos para este

@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 import org.grupin.exceptions.ArquivoNaoEscitoException;
 import org.grupin.exceptions.ProdutoNaoEncontradoException;
 import org.grupin.main.Main;
-import org.grupin.servicos.hallDeEntrada;
+import org.grupin.servicos.HallDeEntrada;
 
 public class RemoverProdutoController {
 
@@ -20,14 +20,14 @@ public class RemoverProdutoController {
     @FXML
     private TextField txtQuantidadeProduto;
 
-    private hallDeEntrada fachada;
+    private HallDeEntrada fachada;
 
     public RemoverProdutoController(){}
 
     @FXML
     private void buscarProduto() {
 
-        fachada = new hallDeEntrada();
+        fachada = new HallDeEntrada();
         String referencia = txtReferenciaProduto.getText();
 
 
@@ -41,7 +41,7 @@ public class RemoverProdutoController {
 
         } else {
 
-            hallDeEntrada fachada = new hallDeEntrada();
+            HallDeEntrada fachada = new HallDeEntrada();
 
 
             int qtd = Integer.parseInt(txtQuantidadeProduto.getText());

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="306.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.grupin.GUI.agendamentos.NovoAgendamentoController">
+   <children>
+      <Label layoutX="14.0" layoutY="135.0" text="Tipo do Animal:" />
+      <Label layoutX="14.0" layoutY="75.0" text="Telefone:" />
+      <Label layoutX="14.0" layoutY="105.0" text="Nome do Animal:" />
+      <Label layoutX="14.0" layoutY="15.0" text="Nome:" />
+      <Label layoutX="14.0" layoutY="45.0" text="CPF:" />
+      <Label layoutX="14.0" layoutY="195.0" text="Ref. Serviço:" />
+      <Label layoutX="14.0" layoutY="165.0" text="Raça do Animal:" />
+      <TextField fx:id="txtNome" layoutX="165.0" layoutY="10.0" />
+      <TextField fx:id="txtCpf" layoutX="165.0" layoutY="40.0" />
+      <TextField fx:id="txtTel" layoutX="165.0" layoutY="70.0" />
+      <TextField fx:id="txtNomeAnimal" layoutX="165.0" layoutY="100.0" />
+      <TextField fx:id="txtTipoAnimal" layoutX="165.0" layoutY="130.0" />
+      <TextField fx:id="txtRacaAnimal" layoutX="165.0" layoutY="160.0" />
+      <TextField fx:id="txtRefServico" layoutX="165.0" layoutY="190.0" />
+       <TextField fx:id="txtDataMarcada" layoutX="165.0" layoutY="220.0" promptText="DD/MM/AAAA" />
+      <Button layoutX="167.0" layoutY="260.0" mnemonicParsing="false" text="OK" onAction="#registrar" />
+      <Label layoutX="14.0" layoutY="225.0" text="Data Marcada:" />
+   </children>
+</AnchorPane>

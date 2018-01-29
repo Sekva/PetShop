@@ -5,7 +5,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.grupin.entidades.Servico;
 import org.grupin.main.Main;
-import org.grupin.servicos.hallDeEntrada;
+import org.grupin.servicos.HallDeEntrada;
 
 public class NovoServicoController {
 
@@ -25,11 +25,11 @@ public class NovoServicoController {
     private TextField txtCategoria;
 
 
-    private hallDeEntrada fachada;
+    private HallDeEntrada fachada;
 
 
     public NovoServicoController() {
-        this.fachada = new hallDeEntrada();
+        this.fachada = new HallDeEntrada();
     }
 
     @FXML
