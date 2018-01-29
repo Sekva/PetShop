@@ -9,15 +9,46 @@
     <list default="true" id="6830527e-6ca6-4c7b-93bb-41082f9639e5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/sekva.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/sekva.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/jsons/agendamentos.json" afterPath="$PROJECT_DIR$/jsons/agendamentos.json" />
       <change beforePath="$PROJECT_DIR$/jsons/produtos.json" afterPath="$PROJECT_DIR$/jsons/produtos.json" />
+      <change beforePath="$PROJECT_DIR$/jsons/servicos.json" afterPath="$PROJECT_DIR$/jsons/servicos.json" />
       <change beforePath="$PROJECT_DIR$/jsons/vendas.json" afterPath="$PROJECT_DIR$/jsons/vendas.json" />
-      <change beforePath="$PROJECT_DIR$/src/org/grupin/entidades/Agendamento.java" afterPath="$PROJECT_DIR$/src/org/grupin/entidades/Agendamento.java" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/DD1_jar/DD1.jar" afterPath="$PROJECT_DIR$/out/artifacts/DD1_jar/DD1.jar" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/DD1_jar/jsons/produtos.json" afterPath="$PROJECT_DIR$/out/artifacts/DD1_jar/jsons/produtos.json" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/entidades/Endereco.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/entidades/Endereco.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/entidades/Item.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/entidades/Item.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/entidades/Produto.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/entidades/Produto.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/entidades/Servico.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/entidades/Servico.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/entidades/Venda.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/entidades/Venda.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/exceptions/AnimalInvalidoException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/exceptions/ProdutoInvalidoException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/exceptions/VendaInvalidaException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoAgendamentos$1.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoAgendamentos$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoAgendamentos.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoAgendamentos.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoProdutos$1.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoProdutos$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoProdutos.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoProdutos.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoServicos$1.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoServicos$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoServicos.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoServicos.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoVendas$1.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoVendas$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoVendas.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/repo/RepoVendas.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DD1/org/grupin/servicos/ControleAgendamentos.class" afterPath="$PROJECT_DIR$/out/production/DD1/org/grupin/servicos/ControleAgendamentos.class" />
       <change beforePath="$PROJECT_DIR$/src/org/grupin/entidades/Animal.java" afterPath="$PROJECT_DIR$/src/org/grupin/entidades/Animal.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/grupin/entidades/Cliente.java" afterPath="$PROJECT_DIR$/src/org/grupin/entidades/Cliente.java" />
       <change beforePath="$PROJECT_DIR$/src/org/grupin/entidades/Endereco.java" afterPath="$PROJECT_DIR$/src/org/grupin/entidades/Endereco.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/entidades/Item.java" afterPath="$PROJECT_DIR$/src/org/grupin/entidades/Item.java" />
       <change beforePath="$PROJECT_DIR$/src/org/grupin/entidades/Produto.java" afterPath="$PROJECT_DIR$/src/org/grupin/entidades/Produto.java" />
       <change beforePath="$PROJECT_DIR$/src/org/grupin/entidades/Servico.java" afterPath="$PROJECT_DIR$/src/org/grupin/entidades/Servico.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/grupin/repo/RepoAgendamentos.java" afterPath="$PROJECT_DIR$/src/org/grupin/repo/RepoAgendamentos.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/entidades/Venda.java" afterPath="$PROJECT_DIR$/src/org/grupin/entidades/Venda.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/exceptions/AnimalInvalidoException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/exceptions/ProdutoInvalidoException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/exceptions/VendaInvalidaException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/repo/RepoProdutos.java" afterPath="$PROJECT_DIR$/src/org/grupin/repo/RepoProdutos.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/repo/RepoServicos.java" afterPath="$PROJECT_DIR$/src/org/grupin/repo/RepoServicos.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/repo/RepoVendas.java" afterPath="$PROJECT_DIR$/src/org/grupin/repo/RepoVendas.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/repo/contratos/IRepoAgendamentos.java" afterPath="$PROJECT_DIR$/src/org/grupin/repo/contratos/IRepoAgendamentos.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/repo/contratos/IRepoProdutos.java" afterPath="$PROJECT_DIR$/src/org/grupin/repo/contratos/IRepoProdutos.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/repo/contratos/IRepoServicos.java" afterPath="$PROJECT_DIR$/src/org/grupin/repo/contratos/IRepoServicos.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/repo/contratos/IRepoVendas.java" afterPath="$PROJECT_DIR$/src/org/grupin/repo/contratos/IRepoVendas.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/grupin/servicos/ControleAgendamentos.java" afterPath="$PROJECT_DIR$/src/org/grupin/servicos/ControleAgendamentos.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +65,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file leaf-file-name="Agendamento.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Agendamento.java">
+      <file leaf-file-name="Produto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Produto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="377">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Servico.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Servico.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-690">
+              <caret line="15" column="138" lean-forward="false" selection-start-line="15" selection-start-column="122" selection-end-line="15" selection-end-column="138" />
               <folding />
             </state>
           </provider>
@@ -67,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/org/grupin/GUI/NovoServicoController.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/GUI/listaCompletaServicos.fxml" />
         <option value="$PROJECT_DIR$/src/org/grupin/GUI/ListCompletaServico.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/GUI/gerenteGUI.fxml" />
@@ -100,24 +150,25 @@
         <option value="$PROJECT_DIR$/src/org/grupin/GUI/GerenteGUIController.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/GUI/Login.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/org/grupin/repo/RepoProdutos.java" />
-        <option value="$PROJECT_DIR$/src/org/grupin/repo/RepoServicos.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/repo/RepoVendas.java" />
-        <option value="$PROJECT_DIR$/src/org/grupin/servicos/ControleAgendamentos.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/servicos/ControleProdutos.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/servicos/ControleVendas.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/servicos/hallDeEntrada.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/servicos/ControlesServicos.java" />
+        <option value="$PROJECT_DIR$/src/org/grupin/repo/RepoAgendamentos.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/GUI/vendas/ListVendaController.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/GUI/agendamentos/ListAgendamentosController.java" />
-        <option value="$PROJECT_DIR$/src/org/grupin/entidades/Animal.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/entidades/Cliente.java" />
-        <option value="$PROJECT_DIR$/src/org/grupin/entidades/Agendamento.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/entidades/Endereco.java" />
-        <option value="$PROJECT_DIR$/src/org/grupin/entidades/Servico.java" />
-        <option value="$PROJECT_DIR$/src/org/grupin/entidades/Produto.java" />
+        <option value="$PROJECT_DIR$/src/org/grupin/entidades/Animal.java" />
+        <option value="$PROJECT_DIR$/src/org/grupin/entidades/Agendamento.java" />
         <option value="$PROJECT_DIR$/src/org/grupin/entidades/Item.java" />
-        <option value="$PROJECT_DIR$/src/org/grupin/repo/RepoAgendamentos.java" />
+        <option value="$PROJECT_DIR$/src/org/grupin/entidades/Venda.java" />
+        <option value="$PROJECT_DIR$/src/org/grupin/repo/RepoProdutos.java" />
+        <option value="$PROJECT_DIR$/src/org/grupin/repo/RepoServicos.java" />
+        <option value="$PROJECT_DIR$/src/org/grupin/servicos/ControleAgendamentos.java" />
+        <option value="$PROJECT_DIR$/src/org/grupin/entidades/Produto.java" />
+        <option value="$PROJECT_DIR$/src/org/grupin/entidades/Servico.java" />
       </list>
     </option>
   </component>
@@ -151,28 +202,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DD1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="DD1" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="DD1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="DD1" type="616d4139:PackageViewModuleNode" />
-              <item name="org.grupin" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="aqui" type="b2602c69:ProjectViewProjectNode" />
               <item name="aqui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aqui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aqui" type="462c0819:PsiDirectoryNode" />
+              <item name="jsons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aqui" type="b2602c69:ProjectViewProjectNode" />
@@ -192,16 +232,22 @@
               <item name="grupin" type="462c0819:PsiDirectoryNode" />
               <item name="entidades" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
             <path>
-              <item name="aqui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aqui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="grupin" type="462c0819:PsiDirectoryNode" />
-              <item name="repo" type="462c0819:PsiDirectoryNode" />
+              <item name="DD1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="DD1" type="616d4139:PackageViewModuleNode" />
             </path>
             <path>
-              <item name="aqui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="DD1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="DD1" type="616d4139:PackageViewModuleNode" />
+              <item name="org.grupin" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -223,7 +269,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -391,16 +436,19 @@
       <updated>1516318767867</updated>
       <workItem from="1516892950760" duration="2954000" />
       <workItem from="1516986646897" duration="7427000" />
-      <workItem from="1517023785998" duration="1645000" />
+      <workItem from="1517023785998" duration="4848000" />
+      <workItem from="1517153505123" duration="907000" />
+      <workItem from="1517154681593" duration="47000" />
+      <workItem from="1517156058374" duration="4155000" />
+      <workItem from="1517178374487" duration="2426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12026000" />
+    <option name="totallyTimeSpent" value="30397000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="31" width="1376" height="742" extended-state="6" />
-    <editor active="true" />
+    <frame x="412" y="31" width="1376" height="742" extended-state="6" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39970717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -435,40 +483,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39970717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39751554" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266564" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33590138" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936803" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22767204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -483,20 +497,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/GUI/GerenteGUIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/GUI/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/grupin/GUI/login.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -505,13 +505,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/GUI/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/grupin/GUI/problemaBaseDeDados.fxml">
@@ -580,13 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/servicos/ControleProdutos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/grupin/GUI/tema.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -601,31 +587,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/AgendamentoInvalidoPorId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/AgendamentoNaoEncontradoException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="2" column="46" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/AnimalInvalidoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/ArquivoNaoEscitoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -636,13 +601,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/ProdutoInvalidoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/ProdutoInvalidoException.java" />
     <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/ProdutoNaoEncontradoException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -657,20 +616,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/VendaInvalidaException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/VendaInvalidaException.java" />
     <entry file="file://$PROJECT_DIR$/src/org/grupin/repo/contratos/IRepoAgendamentos.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -699,38 +645,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/repo/RepoProdutos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/repo/RepoServicos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/repo/RepoVendas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="91" column="1" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/T1.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/servicos/ControleAgendamentos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -759,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -777,90 +694,160 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/AgendamentoInvalidoPorId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/AnimalInvalidoException.java" />
     <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Endereco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="12">
+          <caret line="16" column="111" lean-forward="false" selection-start-line="16" selection-start-column="111" selection-end-line="16" selection-end-column="111" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Item.java">
+    <entry file="file://$PROJECT_DIR$/DD1.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Produto.java">
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/GUI/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Servico.java">
+    <entry file="file://$PROJECT_DIR$/jsons/produtos.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Venda.java">
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/servicos/ControleProdutos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="1224">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/GUI/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
+        <state relative-caret-position="1836">
           <caret line="124" column="5" lean-forward="false" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
-          <folding>
-            <element signature="method#Cliente#0;class#Cliente#0" expanded="false" />
-            <element signature="method#Cliente#1;class#Cliente#0" expanded="false" />
-            <element signature="method#Cliente#2;class#Cliente#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="12" column="64" lean-forward="false" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk/src.zip!/java/lang/Boolean.java">
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/repo/RepoServicos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-751">
-          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="279">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/repo/RepoVendas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/repo/RepoProdutos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="142" column="4" lean-forward="false" selection-start-line="142" selection-start-column="4" selection-end-line="149" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/grupin/repo/RepoAgendamentos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1027">
-          <caret line="86" column="73" lean-forward="true" selection-start-line="86" selection-start-column="73" selection-end-line="86" selection-end-column="73" />
+        <state relative-caret-position="221">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/exceptions/ArquivoNaoEscitoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Agendamento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="272">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Venda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/servicos/ControleAgendamentos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690">
+          <caret line="15" column="138" lean-forward="false" selection-start-line="15" selection-start-column="122" selection-end-line="15" selection-end-column="138" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Produto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/grupin/entidades/Servico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>

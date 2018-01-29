@@ -7,10 +7,10 @@ import java.util.Random;
  */
 public class Animal {
 
-    private int idAnimal;
+    private int idAnimal; /**Identificador unico */
     private String nomeAnimal;
-    private String tipoAnimal;
-    private String racaAnimal;
+    private String tipoAnimal; /** Ex: Cachorro, gato e etc */
+    private String racaAnimal; /** Ex: Husky, Yorkshire e etc */
 
     public Animal(String nomeAnimal, String tipoAnimal, String racaAnimal) {
         this.idAnimal = new Random().nextInt();
